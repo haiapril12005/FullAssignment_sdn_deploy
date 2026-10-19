@@ -1,0 +1,16 @@
+# Render Blueprint: one Web Service = Express API + React build (same URL)
+services:
+  - type: web
+    name: simple-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: MONGODB_URI
+        sync: false # paste your MongoDB Atlas connection string in the Render dashboard
+      - key: AUTH_SECRET
+        generateValue: true

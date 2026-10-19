@@ -1,0 +1,21 @@
+body {
+  background-color: #fff;
+}
+
+.auth-card {
+  max-width: 440px;
+  margin: 10vh auto 0;
+}
+
+.quiz-box {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.option-label {
+  cursor: pointer;
+}
+
+.question-card .btn + .btn {
+  margin-left: 0;
+}
