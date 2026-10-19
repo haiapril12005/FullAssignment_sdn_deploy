@@ -6,7 +6,7 @@ export default function UserHome() {
   return (
     <div className="p-4 bg-light rounded-3">
       <h2 className="h4">Hello {user && user.username}!</h2>
-      <p className="text-muted mb-3">Pick a quiz, choose your answers and see your score at the end.</p>
+      <p className="text-muted mb-3">Pick a quiz đi hải, choose your answers and see your score at the end.</p>
       <Link to="/dashboard/quiz" className="btn btn-primary">
         Go to quizzes
       </Link>
